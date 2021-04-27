@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+p {text-align: center;}
+textarea {
+     color: blue;
+     font-size:17;
+ display: block;
+ margin: auto;
+ margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border: 3px solid green;
+  padding: 5px;
+    }
+
+<script>
+function copyElementText(id) {
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+}
+</script>
+.p1 {
+  font-family: "Segoe UI Semibold Italic",,Serif;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100;
+  padding: 5px;
+  height: 1020px; /* Should be removed. Only for demonstration */
+  border: 3px solid green;
+}
+
+
+.column2 {
+ float: center;
+  padding: 5px;
+  height: 350px; /* Should be removed. Only for demonstration */
+  width: 20;
+  border: 3px solid green;
+}
+
+.vertical-menu a {
+  background-color: #a01c95;
+  color: yellow;
+  display: block;
+  padding: 3px;
+ text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #0071ce;
+  color: yellow;
+  font-weight: bold;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<div class="row">
+  <div class="column" style="background-color:#c3d2df;">
+
+  	
+  		<div class="vertical-menu">	
+		<font face="Segoe UI SemiBold" size=2.9> 
+  		<a href="#b1" onclick="myFunction(1)">[ACCIDENT/EMERGENCY]</a>
+  		<a href="#b1" onclick="myFunction(2)">[CUSTOMER UNAVAILABLE]</a>
+  		<a href="#b1" onclick="myFunction(3)">[DELIVERY ISSUES]</a>
+  		<a href="#b1" onclick="myFunction(4)">[LONG WAIT AT MERCHANT]</a>
+  		<a href="#b1" onclick="myFunction(5)">[MERCHANT CLOSE]</a>
+  		<a href="#b1" onclick="myFunction(6)">[ORDER NOT PLACED]</a>
+  		<a href= "#b1" onclick="myFunction(7)">[PICKED UP BY ANOTHER DASHER]</a>
+  		<a href= "#b1" onclick="myFunction(8)">[STORE CLOSED]</a>
+  		<a href= "#b1" onclick="myFunction(9)">[UNABLE TO MARKED AS DELIVERED]</a>
+  		<a href="#b1" onclick="myFunction(10)">[WRONG] ADDRESS]</a>
+		<a href="#b1" onclick="myFunction(11)">[APOLOGIZE]</a>
+  		<a href="#b1" onclick="myFunction(12)">[APPLICATION ISSUES]</a>
+  		<a href="#b1" onclick="myFunction(13)">[DASHER APP ISSUES]</a>
+  		<a href="#b1" onclick="myFunction(14)">[INACTIVE]</a>
+  		<a href="#b1" onclick="myFunction(15)">[DEACTIVATED]</a>
+  		<a href="#b1" onclick="myFunction(16)">[PAYMENT ISSUES]</a>
+  		<a href="#b1" onclick="myFunction(17)">[FAST PAY ISSUES]</a>
+  		<a href="#b1" onclick="myFunction(18)">[RED CARD DECLINED]</a>
+  		<a href="#b1" onclick="myFunction(19)">[RED CARD SETUP]</a>
+  		<a href="#b1" onclick="myFunction(20)">[TRAVEL TOO FAR]</a>
+		<a href="#b1" onclick="myFunction(21)">[APOLOGIES FOR HASSLE]</a>
+		<a href="#b1" onclick="myFunction(22)">THANKS UPDATE/KEEP YOU WAITING</a>
+		<a href="#b1" onclick="myFunction(23)">[ESCALATE]</a>
+		<a href="#b1" onclick="myFunction(24)">[NO COMPENSATION]</a>
+		<a href="#b1" onclick="myFunction(25)">[POSITIVE FEEDBACK]</a>
+		<a href="#b1" onclick="myFunction(26)">[CALLING CUSTOMER]</a>
+		<a href="#b1" onclick="myFunction(27)">[CALLING MERCHANT]</a>
+		<a href="#b1" onclick="myFunction(28)">[ORDER FOR]</a>
+		<a href="#b1" onclick="myFunction(29)">[HOLD MORE]</a>
+		<a href="#b1" onclick="myFunction(30)">[CANCEL ORDER/PROCESS PAYMENT IN NIMDA]</a>
+		<a href="#b1" onclick="myFunction(31)">[MORE THAN HAPPY]</a>
+		<a href="#b1" onclick="myFunction(32)">[HOLD MORE]</a>
+		<a href="#b1" onclick="myFunction(33)">[THANK FOR/DIFFICULTY]</a>
+		<a href="#b1" onclick="myFunction(34)">[INCORRECT/MISSING]</a>
+		<a href="#b1" onclick="myFunction(35)">ORDER CANCELLED</a>
+		<a href="#b1" onclick="myFunction(36)">REFERRAL ISSUES</a>
+		<a href="#b1" onclick="myFunction(37)">TAXES, 2020 1099, W2</a>
+		<a href="#b1" onclick="myFunction(38)">EDITING/CHANGING DETAILS</a>
+		<a href="#b1" onclick="myFunction(39)">NOT REICEVING ORDERS</a>
+		<a href="#b1" onclick="myFunction(40)">DASHER'S RATING</a>
+		<a href="#b1" onclick="myFunction(41)">I UNDERSTAND THAT YOU</a>
+		<a href="#b1" onclick="myFunction(42)">ADD OR EDIT VEHICLE/CHANGE MARKET</a>
+		<a href="#b1" onclick="myFunction(43)">HOW CAN I HELP</a>
+		</b>
+		</font>
+	</div>
+</div>
+</div>
+  <div  id ="b1" class="column2" style="background-color:#c3d2df;">
+  <p id="t1">Messages:</p>
+ <br>
+      <font face="Segoe UI Semibold" size=3>
+      <textarea id="text" name="text" rows="12" cols="40" wrap="soft">edwin</textarea>
+      </font>
+ <br/>
+</div>
+
+<script>
+function myFunction(a) {
+var ntxt;
+switch (a) {
+  case 1:
+    ntxt="I'm sorry to hear that you had an accident or emergency. First, I want to ask if you are ok. I will be quick in taking care of the order. Sorry to ask this, do you want to be unassigned on that order? If you have picked up the order, we will be cancelling it.";
+    break;
+  case 2:
+    ntxt="I'm sorry that the customer is unavailable. Thank you for updating us. I'll find the best solution for this situation. Please hold while I'll check the order details for you and ask you if you can tag the order on your app as customer unavailable. Please and thank you.";
+    break;
+  case 3:
+    ntxt="I’m really sorry that you're having trouble delivering the order. That would certainly frustrate me too. Let me go ahead and pull up your account to sort it out for you.";
+    break;
+  case 4:
+    ntxt="I’m really sorry that you have been waiting for the store or restaurant to prepare the order. That would certainly frustrate me too. Let me go ahead and pull up your account to sort it out for you.";
+    break;
+  case 5:
+    ntxt="Sorry to hear that the restaurant or store is closed. Let me help you by calling the restaurant or store. After that, I will cancel the order then I'll process additional compensation for you if you're eligible. Please hold while I check the order details.";
+    break;
+  case 6:
+    ntxt="I'm sorry that the store or restaurant didn't prepare your order. I hate when that happens as well. I'm going to take care of this for you. Please hold for me to check the order details and ask the restaurant or store to resolve this and make it right for you.";
+    break;
+  case 7:
+    ntxt="My apologies for the hassle and inconvenience that the order was picked up by someone. I hate when that happens as well. Let me contact the merchant and find out why they gave the order to someone else. After I talk to them, I will cancel the order. If you're eligible to receive any payments, I'll process it and you will have confirmation via email.";
+    break;
+case 8:
+    ntxt="I'm sorry to hear that the store was closed. Thank you for bringing this to our attention. Let me go ahead and have this resolved right away.";
+    break;
+case 9:
+    ntxt="I’m really sorry that you're having trouble marking the order as complete. That would certainly frustrate me too. Let me go ahead and pull up your account to sort it out for you.";
+    break;
+case 10:
+    ntxt="I apologize that you have an incorrect address or you have clarification about the address. I hate when that happens as well. Let me check the order details, there will be some information that would help to resolve this issue. If you can send a message or call the customer, so that the customer will be informed of the current situation.";
+    break;
+case 11:
+    ntxt="Sorry to hear about this situation. I’ll absolutely do my best to have this resolved right away.";
+    break;
+case 12:
+    ntxt="I do apologize that you're having concerns with the status of your account or application. I completely understand how you feel about it. Let me look into this for you right away.";
+    break;
+case 13:
+    ntxt="I apologize that you're having app issues. Thank you for informing us. I would perform basic troubleshooting, if it's necessary with you in order for you to use the app efficiently. Thank you so much.";
+    break;
+case 14:
+    ntxt="I'm sorry to hear that you're having concerns about your account being inactive. We appreciate that you are informing us about being inactive. Let me look into this for you right away. Please hold.";
+    break;
+case 15:
+    ntxt="I'm sorry to hear that your account was deactivated. Thank you for bringing this to our attention. Let me go ahead and have this resolved right away.";
+    break;
+case 16:
+    ntxt="I apologize that you are having payment concerns. Thank you for bringing this to our attention. Let me go ahead and check this for you in order for you to know how to receive your payment as soon as possible.";
+    break;
+case 17:
+    ntxt="I'm sorry that you're having issues with your Fast Pay. I completely understand how you feel about it. Let me look into this right away for you. Kindly give me a moment to investigate. Thank you so much.";
+    break;
+case 18:
+    ntxt="I do apologize that the red card got declined. I completely understand how you feel about it. Let me look into this for you right away.";
+    break;
+case 19:
+    ntxt="I do apologize that you have trouble setting up your red card or you didn't received your red card. I completely understand how you feel about it. Let me look into this for you right away.";
+    break;
+case 20:
+    ntxt="I'm sorry to hear that you have to travel too far to get to the customer's address or restaurant. Thank you for bringing this to our attention. Let me go ahead and have this resolved right away.";
+    break;
+case 21:
+    ntxt="My apologies for the hassle and inconvenience. Let me look into this. Could you please hold? ";
+    break;
+case 22:
+    ntxt="Thank you for confirming. Sorry to keep you waiting.";
+    break;
+case 23:
+    ntxt="I understand the situation, we need to resolve these issues. The next step is to document the details you provided me and escalate your concern to our specialized team. They will assist you further. The team will reach out to you via email.";
+    break;
+case 24:
+    ntxt="I appreciate you raising this.  While I cannot provide you with additional compensation, in this case, I will absolutely note the request as feedback.";
+    break;
+case 25:
+    ntxt="Perfect! Thanks so much!  We appreciate your dedication to the customer experience, and we know the customer will too. I’ll make sure to document positive feedback on your level of service.";
+    break;
+case 26:
+    ntxt="I'm will contact the customer to confirm the delivery, please hold.";
+    break;
+case 27:
+    ntxt="I'm calling the restaurant or store to confirm the status of the order.";
+    break;
+case 28:
+    ntxt=" Is this the order for .?";
+    break;
+case 29:
+    ntxt="Please bear with me. I'm still reviewing the details. I would like to ask for another moment or two. Thank you so much.";
+    break;
+case 30:
+    ntxt="I verified that the order was picked up/not placed. The next step is to cancel the order and process payment for arriving at the store or restaurant. You will receive an email for the confirmation of the payment shortly.";
+    break;
+case 31:
+    ntxt="I will be more than happy to answer your questions, assist you with your concerns. I will now pull out the details and review them so that I can provide the best solution to this issue. Please hold.";
+    break;
+case 32:
+    ntxt="Please bear with me. I'm still reviewing the details. I would like to ask for another moment or two. Thank you so much.";
+    break;
+case 33:
+    ntxt="Thank you for bringing this to our attention.  I’m sorry for the difficulty, let me locate some information here so we can give you a resolution.";
+    break;
+case 34:
+    ntxt="Sorry to hear that you have the incorrect order or it's missing some items. I completely understand how you feel. I would be happy to take care of that for you. Let me see what I can do to make right for you.?";
+    break;
+case 35:
+    ntxt="I understand that the order was canceled. I hate it that happens too. Thank you so much for informing us. Give me moment to resolve this one.";
+    break;
+case 36:
+    ntxt="I understand that you have concerns with referral. My apologies, let me take a look at your details so that I will resolve this right away."
+    break;
+case 37:
+    ntxt="I understand that you have inquiries with 2020 1099/W9/tax information/earnings. I would like to provide you with accurate answers, let me take a look at your details so that I will resolve this right away."
+    break;
+case 38:
+    ntxt="I'm sorry that you're having issues with changing your details.  I completely understand how you feel about it. Let me take care of this right away."
+    break;
+case 39:
+    ntxt="I'm sorry to hear that you have been waiting for quite sometime and no orders are coming in. I completely understand how you feel about this. Let me resolve this quickly for you."
+    break;
+case 40:
+    ntxt="I am sorry that you have concerns on your ratings. I completely understand how you feel about this. Let me provide you details about ratings. Please hold as a pull out your account information."
+    break;
+case 41:
+    ntxt="I understand that you have concerns with . I completely understand how you feel about this. Let me look into this. Please hold as a pull out your account information."
+    break;
+case 42:
+    ntxt="I understand that you want to add a vehicle/change market or starting point. I completely understand the urgency of this matter. Please hold as a pull out your account information to help you add or edit a vehicle/change market."
+    break;
+case 43:
+    ntxt="Hi! How can I help you?"
+    break;
+}
+
+  document.getElementById("text").value=ntxt
+  var copyText = document.getElementById("text");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
+</script>	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
